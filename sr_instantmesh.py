@@ -11,7 +11,7 @@ def main():
     parser.add_argument('--method', choices=['ipg', 'drct'], required=True, help="Choose between 'ipg' or 'drct' for super resolution.")
     parser.add_argument('--input_image', required=True, help="Path to the input image.")
     parser.add_argument('--output_dir', required=True, help="Path to the output directory for results.")
-    parser.add_argument('--ipg_model', required=False, help="Path to the IPG pre-trained model.")
+    parser.add_argument('--ipg_model', type=str, default="IPG_SRx4.pth", help="Path to the IPG pre-trained model.")
     parser.add_argument('--drct_model', required=False, help="Path to the DRCT pre-trained model.")
 
     args = parser.parse_args()

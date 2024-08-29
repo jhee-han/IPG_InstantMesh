@@ -88,6 +88,9 @@ By default, we use a 4× scale. Please download the weights from the link below 
 | IPG   | 3x    | 30.36    | [🤗Link](https://huggingface.co/yuchuantian/IPG/blob/main/IPG_SRx3.pth) | [🤗Link](https://huggingface.co/yuchuantian/IPG/blob/main/IPG_srx3.zip) |
 | IPG   | 4x    | 28.13    | [🤗Link](https://huggingface.co/yuchuantian/IPG/blob/main/IPG_SRx4.pth) | [🤗Link](https://huggingface.co/yuchuantian/IPG/blob/main/IPG_srx4.zip) |
 
+# Checkpoint example
+`wget https://huggingface.co/yuchuantian/IPG/resolve/main/IPG_SRx4.pth -P IPG`
+
 # Things to do before running the model
 
 1. Download the weights for IPG with the Scale 4x.
@@ -97,9 +100,9 @@ By default, we use a 4× scale. Please download the weights from the link below 
 4. If you want to run  IPG once and then execute sr_instantmesh with a different input image, make sure to delete all contents inside the following directories so that they are empty: `/IPG/imgs`, and `/IPG/results`.
 You can delete at once by using 'python clean.py'
 
-Once everything is ready, refer to "How to use SR_InstantMesh" to run the model.
+Once everything is ready, refer to "How to use IPG_InstantMesh" to run the model.
 
-# How to use SR_InstantMesh
+# How to use IPG_InstantMesh
 
 To generate a 3D mesh using the IPG model, simply run:
 ```bash
