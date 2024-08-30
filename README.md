@@ -42,6 +42,7 @@ pip install -r requirements.txt
 #for example, export PYTHONPATH=$PYTHONPATH:/hdd/jhee/3D/IPG_InstantMesh/IPG/
 #If you get Error: mkl-service + Intel(R) MKL: MKL_THREADING_LAYER=INTEL is incompatible with libgomp.so.1 library ,
 export MKL_THREADING_LAYER=GNU
+export PYTHONPATH=$PYTHONPATH:/path/to/your/IPG_InstantMesh
 #if you get ModuleNotFoundError: No module named 'torch' when you run python setup.py install,
 1)pip install --upgrade setuptools wheel
 2)pip install --use-pep517 --no-build-isolation .
